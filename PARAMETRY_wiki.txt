@@ -1,0 +1,94 @@
+1 Parameters
+{parameter-form}
+Submit: {parameter-form-submit}
+
+1.1 Field - string
+{parameter:field-string|type=string|value=test}
+*Editor:* {parameter-editor:field-string}\\
+Allowed: $pageParameters.renderAllowedValues("field-string")\\
+Render: $pageParameters.render("field-string")
+
+1.1 Combo - string
+{parameter:combo-string|type=string|allowed-values=lest,pest,mest|value=test|allow-no-value=true}
+*Editor:* {parameter-editor:combo-string}\\
+Allowed: $pageParameters.renderAllowedValues("combo-string")\\
+Render: $pageParameters.render("combo-string")
+
+1.1 Multi - string
+{parameter:multi-string|type=string|multi=true|allowed-values=aa,bb,cc,ee|value=dd,gg,hh,kk,jj,ii,uu,zz,tt,rr,ll}
+*Editor:* {parameter-editor:multi-string}\\
+Allowed: $pageParameters.renderAllowedValues("multi-string")\\
+Render: $pageParameters.render("multi-string")
+
+1.1 Check box - boolean
+{parameter:checkbox|type=boolean|value=true}
+*Editor:* {parameter-editor:checkbox}\\
+Allowed: $pageParameters.renderAllowedValues("checkbox")\\
+Render: $pageParameters.render("checkbox")
+
+1.1 Date picker - date
+{parameter:date|type=date|value=2001-12-31}
+*Editor:* {parameter-editor:date}\\
+Allowed: $pageParameters.renderAllowedValues("date")\\
+Render: $pageParameters.render("date")
+
+1.1 Combo - Enum Risk
+{parameter:combo-enum-risk|type=enum:risk|allow-no-value=true}
+*Editor:* {parameter-editor:combo-enum-risk}\\
+Allowed: $pageParameters.renderAllowedValues("combo-enum-risk")\\
+Render: $pageParameters.render("combo-enum-risk")
+
+1.1 Multi - Enum Risk
+{parameter:multi-enum-risk|type=enum:risk|multi=true|value=low}
+*Editor:* {parameter-editor:multi-enum-risk}\\
+Allowed: $pageParameters.renderAllowedValues("multi-enum-risk")\\
+Render: $pageParameters.render("multi-enum-risk")
+
+1.1 Combo - Enum Priority
+{parameter:combo-enum-prio|type=enum:priority|allow-no-value=true}
+*Editor:* {parameter-editor:combo-enum-prio}\\
+Allowed: $pageParameters.renderAllowedValues("combo-enum-prio")\\
+Render: $pageParameters.render("combo-enum-prio")
+
+1.1 Multi - Enum Priority
+{parameter:multi-enum-prio|type=enum:priority|multi=true|value=low}
+*Editor:* {parameter-editor:multi-enum-prio}\\
+Allowed: $pageParameters.renderAllowedValues("multi-enum-prio")\\
+Render: $pageParameters.render("multi-enum-prio")
+
+1.1 Combo - Time Point
+{parameter:combo-timepoint|type=timePoint|allow-no-value=true}
+*Editor:* {parameter-editor:combo-timepoint}\\
+Allowed: $pageParameters.renderAllowedValues("combo-timepoint")\\
+Render: $pageParameters.render("combo-timepoint")
+
+1.1 Multi - Time Point
+{parameter:multi-timepoint|type=timePoint|multi=true|value=Sprint1}
+*Editor:* {parameter-editor:multi-timepoint}\\
+Allowed: $pageParameters.renderAllowedValues("multi-timepoint")\\
+Render: $pageParameters.render("multi-timepoint")
+
+1.1 Combo - User
+{parameter:combo-user|type=user|allow-no-value=true|value=admin}
+*Editor:* {parameter-editor:combo-user}\\
+Allowed: $pageParameters.renderAllowedValues("combo-user")\\
+Render: $pageParameters.render("combo-user")
+
+1.1 Multi - User
+{parameter:multi-user|type=user|multi=true|value=admin}
+*Editor:* {parameter-editor:multi-user}\\
+Allowed: $pageParameters.renderAllowedValues("multi-user")\\
+Render: $pageParameters.render("multi-user")
+
+1.1 Combo - Project
+{parameter:combo-project|type=project|allow-no-value=true}
+*Editor:* {parameter-editor:combo-project}\\
+Allowed: $pageParameters.renderAllowedValues("combo-project")\\
+Render: $pageParameters.render("combo-project")
+
+1.1 Multi - Project
+{parameter:multi-project|type=project|multi=true|value=elibrary}
+*Editor:* {parameter-editor:multi-project}\\
+Allowed: $pageParameters.renderAllowedValues("multi-project")\\
+Render: $pageParameters.render("multi-project")
+{parameter-form}
